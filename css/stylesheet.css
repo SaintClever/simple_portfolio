@@ -149,8 +149,8 @@ a.nav:hover {
 
 
 img {
-    filter: grayscale(100%);
-    opacity: 0.1;
+    filter: grayscale(50%);
+    opacity: 0.5;
 }
 
 img:hover {
