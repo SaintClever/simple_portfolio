@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        color: #ffffff;
+        background-color: #282a36;
+        margin: 0;
+        font-family: Avenir;
+    }
+
+    .alignment_padding {
+        text-align: right;
+        padding: 15px;
+    }
+
+    .row {
+        display: -ms-flexbox;
+        /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap;
+        /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .column {
+        -ms-flex: 25%;
+        /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+    }
+
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+    .resume {
+        height: 2000px;
+        width: 350px;
+        background-color: #343746;
+        float: left;
+    }
+
+    .portfolio {
+        margin-left: 350px;
+    }
+
+    .display_none {
+        display: block;
+    }
+
+    @media screen and (max-width: 800px) {
+        .resume {
+            width: 100%;
+            float: none;
+            height: 100%;
+            min-height: 100px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .portfolio {
+            width: 100%;
+            float: none;
+            min-height: 100px;
+            overflow: hidden;
+            text-align: center;
+            margin-left: 0px;
+        }
+
+        .alignment_padding {
+            text-align: center;
+        }
+
+        .display_none {
+            display: none;
+            visibility:hidden;
+        }
+
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+        .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+        }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+
+    #background_image {
+        background-image: url("images/bg.png");
+        background-attachment: fixed;
+    }
+    
+    .title {
+        font-weight: bold;
+        color: #ea1e61;
+    }
+
+    .copy {
+        font-size: 14px;
+    }
+
+    .logo {
+        font-family: "Century Gothic", Avenir;
+        font-size: 175px;
+        text-shadow: 2px 2px #ea1e61;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .quote {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    a {
+        color: #ea1e61;
+        text-decoration: none;
+    }
+
+
+    .nav {
+        color: #ffffff;
+    }
+
+    a.nav:hover {
+        color: #ea1e61;
+    }
+
+
+
+</style>
+
+
+<body>
+    <!-- Header -->
+    <div class="resume" id="background_image">
+        <div class="alignment_padding">
+            <p class="copy">
+                <a class="nav" href="#" target="_self">Python</a> . 
+                <a class="nav" href="#" target="_self">JavaScript</a> . 
+                <a class="nav" href="#" target="_self">Dart &amp; Flutter</a> . 
+                <a class="nav" href="#" target="_self">Illustraions</a>
+            </p>
+
+            <p class="logo">NP</p>
+
+            <h4 class="quote">
+                &lt;The he<a href="https://saintclever.netlify.app/" target="_blank">Art</a> of software development/&gt;
+            </h4>
+
+            <p class="copy">
+                Nesta Saint. Clever Parchment<br>
+                Github: <a href="https://github.com/SaintClever" target="_blank">github.com/SaintClever</a></br>
+                Linkedin: <a href="http://www.linkedin.com/in/parchment" target="_blank">linkedin.com/in/parchment</a></br>
+                Email: <a href="mailto:parchment@gmx.com">parchment@gmx.com</a></br>
+                Phone: <a href="tel:+13474655289">347.465.5289</a>
+            </p>
+
+            <p class="copy display_none">
+                <span class="title">Experience</span><br>
+                Buybuy Baby<br>
+                Jun 2018 – Nov 2020<br>
+                Email Development<br><br>
+
+                BedBathBeyond<br>
+                Feb 2018 – Nov 2020<br>
+                Email Development<br><br>
+
+                WingMan Automation<br>
+                Jan 2016 – December 2018<br>
+                Chrome Extension Development<br><br>
+
+                CPA.com<br>
+                July 2016 – Jan 2017<br>
+                Email Development<br><br>
+
+                CCGC School<br>
+                Sep 2015 – Jun 2016<br>
+                Web Development Instructor<br><br>
+
+                Generation Code<br>
+                Apr 2014 – Apr 2015<br>
+                Web Development Instructor<br><br>
+
+                Tenri Cultural Institute<br>
+                Aug 2012 – Mar 2015<br>
+                Web Design<br><br>
+
+                Oddcast<br>
+                Mar 2012 – Jun 2012<br>
+                Flash Animation<br><br>
+
+                On-line Residential<br>
+                Sep 2009 – Mar 2012<br>
+                Email Development<br><br>
+
+
+                <span class="title">Education</span><br>
+                Noble Desktop<br>
+                Feb 2021 – Feb 2021 (Cert)<br>
+                Python Programming Bootcamp<br><br>
+
+                Codesmith<br>
+                Aug 2020 – Aug 2020<br>
+                JavaScript for Beginners & CS Prep<br><br>
+
+                General Assembly<br>
+                Mar 2015 – Jun 2015 (Cert)<br>
+                Web Development Immersive<br><br>
+
+                Per Scholas Institute for Technology<br>
+                Aug 2014 – Nov 2014 (Comptia A+)<br>
+                Comprehensive computer technician-training<br><br>
+
+                Tenri Cultural Institute | Tenri Language Institute<br>
+                Mar 2011 – Jun 2014 (Cert)<br>
+                Japanese language institute<br><br>
+
+                New York Film Academy<br>
+                Sep 2009 – Sep 2009 (Cert)<br>
+                3D animation course<br><br>
+
+                Briarcliffe College<br>
+                Sep 2006 – Aug 2009 (BFA)<br>
+                Graphic & website design<br><br>
+
+                <span class="title">Skills & Interest</span><br>
+                Python, Dart, Flutter, HTML / CSS / JavaScript, Git / Github, Photoshop / Illustrator<br>
+                Functional Programming, OOP: Object-Oriented Programming, Illustrating, Japanese<br>
+            </p>
+        </div>
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="portfolio">
+        <div class="row">
+            <div class="column">
+
+                <a href="https://github.com/SaintClever/multi_language_flashcard_app" target="_blank">
+                    <img src="images/mandarin_front.png" style="width:100%">
+                </a>
+
+                <a href="https://github.com/SaintClever/movie_webscraper" target="_blank">
+                    <img src="images/movie_webscraper.gif" style="width:100%">
+                </a>
+
+                <img src="images/falls2.jpeg" style="width:100%">
+
+                <a href="https://github.com/SaintClever/name_all_the_us_states_game" target="_blank">
+                    <img src="images/name_all_the_us_states_game.gif" style="width:100%">
+                </a>
+
+                <img src="images/nature.jpeg" style="width:100%">
+                <img src="images/wedding.jpeg" style="width:100%;">
+                <img src="images/mist.jpeg" style="width:100%">
+                <img src="images/name_all_the_us_states_game.gif" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/wedding.jpeg" style="width:100%;">
+                <img src="images/underwater.jpeg" style="width:100%">
+                <img src="images/ocean.jpeg" style="width:100%">
+                <img src="images/mandarin_front.png" style="width:100%">
+                <img src="images/mountainskies.jpeg" style="width:100%">
+                <img src="images/mandarin_back.png" style="width:100%">
+                <img src="images/underwater.jpeg" style="width:100%">
+            </div>
+            <div class="column">
+
+                <a href="https://github.com/SaintClever/multi_language_flashcard_app" target="_blank">
+                    <img src="images/multi_language_flashcard_app.gif" style="width:100%">
+                </a>
+
+                <a href="https://github.com/SaintClever/batch_image_resize_retouch_and_conversion_script" target="_blank">
+                    <img src="images/batch_image_resize_retouch_and_conversion_script_00.gif" style="width:100%">
+                </a>
+
+                <img src="images/mandarin_back.png" style="width:100%">
+                <img src="images/falls2.jpeg" style="width:100%">
+
+                <a href="https://github.com/SaintClever/name_all_the_us_states_game" target="_blank">
+                    <img src="images/name_all_the_us_states_game.gif" style="width:100%">
+                </a>
+
+                <img src="images/nature.jpeg" style="width:100%">
+                <img src="images/mist.jpeg" style="width:100%">
+
+                <img src="images/paris.jpeg" style="width:100%">
+
+                <img src="images/wedding.jpeg" style="width:100%;">
+            </div>
+            <div class="column">
+                <img src="images/wedding.jpeg" style="width:100%;">
+                <img src="images/underwater.jpeg" style="width:100%">
+                <img src="images/ocean.jpeg" style="width:100%">
+                <img src="images/mandarin_front.png" style="width:100%">
+                <img src="images/mountainskies.jpeg" style="width:100%">
+                <img src="images/mandarin_back.png" style="width:100%">
+                <img src="images/underwater.jpeg" style="width:100%">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
